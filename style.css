@@ -26,6 +26,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .time{
@@ -34,7 +35,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.hour, .dots, .minutes{
+.hours, .dots, .minutes{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +43,7 @@ body{
     padding: 0 10px;
     line-height: 125px;
 }
-.hour, .minutes{
+.hours, .minutes{
     font-size: 6.5em;
     width: 125px;
 
@@ -53,7 +54,7 @@ body{
     color: #929292;
 }
 
-.hour{
+.hours{
     background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -71,6 +72,46 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
-    
+    flex-direction: column;
+    margin-left: 10px;
+
 }
+.period, .seconds{
+    font-size: 1.2em;
+    font-weight: 500;
+
+
+}
+.period{
+    transform:translateY(-20px);
+    background: -webkit-linear-gradient(90deg, #f7b63f, #faf879);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.seconds{
+    transform:translateY(16px);
+    background: -webkit-linear-gradient(90deg, #24ff6d, #2f93f1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    background: -webkit-linear-gradient(90deg, #ae4af6, #ff98d1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.day-name, .day-number, .year{
+    margin-left: 8px;
+
+}
+
+
+
